@@ -1,61 +1,131 @@
-# python-roadmap
-This repository contains a collection of Python projects organized by difficulty level to document my personal progression and skill improvement.
+# 🐍 Python Roadmap
+
+This project contains a collection of Python exercises and functions divided into three difficulty levels: **Beginner**, **Intermediate**, and **Advanced**. Each section includes practical examples and implementations designed to help learners progressively master key concepts of the Python language.
 
 ---
 
-## Levels
-- **Beginner**: Basic syntax, simple scripts, and foundational concepts.
-- **Intermediate**: More complex logic, data structures, and small applications.
-- **Advanced**: High-level projects, optimization, and advanced topics like concurrency or machine learning.
+## 📂 Project Structure
+
+```
+python-roadmap/
+│
+├── beginner/
+│   ├── basics.py
+│   ├── loops_and_conditions.py
+│   └── ...
+│
+├── intermediate/
+│   ├── file_handling.py
+│   ├── oop_intro.py
+│   └── ...
+│
+├── advanced/
+│   ├── decorators.py
+│   ├── async_programming.py
+│   └── ...
+│
+└── README.md
+```
 
 ---
 
-## Goal
-This repository is my personal roadmap to becoming a better Python developer. Each folder represents a stage in my learning process.
+## 🧩 Difficulty Levels
+
+### 🟢 Beginner
+Covers the fundamental building blocks of Python:
+- Variables, data types, and operators
+- Conditions and loops
+- Functions and modules
+- Lists, dictionaries, and tuples
+
+**Example:**
+```python
+def is_even(number):
+    """Returns True if the number is even, otherwise False."""
+    return number % 2 == 0
+```
 
 ---
 
-## Structure
-beginner/
-intermediate/
-advanced/
+### 🟠 Intermediate
+Focuses on practical programming skills and deeper understanding:
+- Object-Oriented Programming (OOP)
+- File handling and exception management
+- Working with external libraries
+- Data manipulation (JSON, CSV, etc.)
+
+**Example:**
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        return f"Hi, my name is {self.name} and I'm {self.age} years old."
+```
 
 ---
 
-## How to Use
-1. Navigate to the folder that matches your current skill level.
-2. Explore the projects and read the comments in the code.
-3. Try to improve or extend the projects as you learn more.
+### 🔴 Advanced
+Covers advanced concepts and optimization techniques:
+- Decorators and generators
+- Asynchronous programming
+- Design patterns
+- Testing and performance tuning
+
+**Example:**
+```python
+import asyncio
+
+async def download_data():
+    await asyncio.sleep(1)
+    print("Download completed!")
+
+asyncio.run(download_data())
+```
 
 ---
 
-## Project Ideas that I will create in the future
-### Beginner
-- Hello World
-- Basic Calculator
-- Simple To-Do List (CLI)
-- Temperature Converter
+## 🚀 How to Run the Project
 
-### Intermediate
-- Web Scraper with `requests` and `BeautifulSoup`
-- Simple REST API using `Flask`
-- CSV Data Analyzer
-- Basic Game (e.g., Tic-Tac-Toe)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/python-roadmap.git
+   cd python-roadmap
+   ```
 
-### Advanced
-- Async Web Server
-- Machine Learning Model with `scikit-learn`
-- Chatbot using NLP
-- Data Visualization Dashboard
+2. (Optional) Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+   ```
 
----
-
-## Goals
-This repository is not just a collection of code — it’s a timeline of my growth as a Python developer. Each project represents a step forward in understanding and applying new concepts.
+3. Run one of the files:
+   ```bash
+   python beginner/basics.py
+   ```
 
 ---
 
-## Future Plans
-- Add documentation for each project.
-- Include tests and best practices.
-- Explore advanced topics like concurrency, design patterns, and cloud integration.
+## 🧠 Project Goal
+
+The goal of this project is to create a progressive Python roadmap to:
+- Strengthen the fundamentals of the language
+- Improve understanding of intermediate concepts
+- Explore advanced programming techniques
+
+This roadmap serves as a practical learning path for those who want to evolve from beginner to advanced Python developer.
+
+---
+
+## 📜 License
+
+This project is distributed under the **MIT License**. You are free to modify, improve, and share it.
+
+---
+
+✍️ **Author:** Leonardo P.  
+🕓 **Last updated:** November 2025
+
